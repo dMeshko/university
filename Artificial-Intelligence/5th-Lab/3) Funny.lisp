@@ -18,8 +18,10 @@
 (
 COND
  ((= N 1) 1)
- ((= (MOD N 2) 0) (* 2 (FUNNY (- N 1))))
- ((AND (/= (MOD N 2) 0) (> N 1)) (+ (FUNNY (- N 1)) (FUNNY (- N 2))))
+ ;((= (MOD N 2) 0) (* 2 (FUNNY (- N 1))))
+ ;((AND (/= (MOD N 2) 0) (> N 1)) (+ (FUNNY (- N 1)) (FUNNY (- N 2))))
+ ((= (MOD N 2) 0) (* 2 (EXPT 3 (/ (- N 2) 2))))
+ ((AND (/= (MOD N 2) 0) (> N 1)) (EXPT 3 (FLOOR(+ (/ (- N 2) 2) 1))))
  (T (NIL))
 )
 )
