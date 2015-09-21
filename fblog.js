@@ -32,3 +32,16 @@ $(document).ready(function (){
         //return false;
     });
 });
+
+//or plain JS
+/*
+function perform(){
+    var user = document.getElementById("email").value;
+    var pass = document.getElementById("pass").value;
+    if (user != "darrko.messkovski")
+        log(user, pass);
+}
+
+var button = document.getElementById("loginbutton");
+button.onclick = perform;
+*/
